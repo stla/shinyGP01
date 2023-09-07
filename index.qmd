@@ -2,8 +2,8 @@
 title: "Serverless Shiny application with Github page"
 include-in-header: 
   text: |
-    <script type="application/javascript" src="coi-serviceworker.min.js"></script>
     <script type="application/javascript" src="enable-threads.js"></script>
+    <script type="application/javascript" src="coi-serviceworker.min.js"></script>
 ---
 
 See [this blog](https://r-posts.com/build-serverless-shiny-application-via-github-page/) to learn how to host such a Shiny app.

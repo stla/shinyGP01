@@ -2,6 +2,7 @@
 title: "Serverless Shiny application with Github page"
 include-in-header: 
   text: |
+    <script type="application/javascript" src="coi-serviceworker.min.js"></script>
     <script type="application/javascript" src="enable-threads.js"></script>
 ---
 
@@ -95,7 +96,7 @@ See [this blog](https://r-posts.com/build-serverless-shiny-application-via-githu
         }
       })();
       // TODO
-      const registration = await navigator.serviceWorker.register('/shinyGP01/httpuv-serviceworker.js', { scope: '/shinyGP01/' }).catch((error) => {
+      const registration = await navigator.serviceWorker.register('httpuv-serviceworker.js', { scope: '' }).catch((error) => {
       console.error('Service worker registration error:', error);
       });
 

@@ -131,7 +131,7 @@ include-in-header:
         <i class="fas fa-spinner fa-spin"></i>
         Installing packages...
       `;
-      await webR.installPackages(["shiny", "jsonlite"])
+      await webR.installPackages(["shiny", "jsonlite", "DT", "plotly", "chron", "callr"])
 
       document.getElementById('statusButton').innerHTML = `
         <i class="fas fa-spinner fa-spin"></i>

@@ -134,7 +134,7 @@ See [this blog](https://r-posts.com/build-serverless-shiny-application-via-githu
         <i class="fas fa-spinner fa-spin"></i>
         Installing packages...
       `;
-      await webR.installPackages(["shiny", "jsonlite", "DT", "plotly", "chron", "callr", "promises", "future"])
+      await webR.installPackages(["shiny", "jsonlite", "ggplot2", "chron"])
 
       document.getElementById('statusButton').innerHTML = `
         <i class="fas fa-spinner fa-spin"></i>

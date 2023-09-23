@@ -19,7 +19,7 @@ ui <- fluidPage(
   tags$head(
     tags$style(
       HTML(
-        "#text { font-weight: bold; font-size: 22px;}"
+        "#vtext { font-weight: bold; font-size: 22px;}"
       )
     )
   ),
@@ -29,7 +29,7 @@ ui <- fluidPage(
       br(),
       wellPanel(
         style = "background-color: yellow;",
-        textOutput("text")
+        textOutput("vtext")
       ),
       br(),
       actionButton(
@@ -65,7 +65,7 @@ server <- function(input, output, session) {
     "Hello. Click the first button."
   )
   
-  output[["text"]] <- renderText({
+  output[["vtext"]] <- renderText({
     Text()
   })
   

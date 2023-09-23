@@ -17,13 +17,13 @@ longProcess <- function(wait) {
 }
 
 ui <- fluidPage(
-  tags$head(
-    tags$style(
-      HTML(
-        "#vtext { font-weight: bold; font-size: 22px;}"
-      )
-    )
-  ),
+  # tags$head(
+  #   tags$style(
+  #     HTML(
+  #       "#vtext { font-weight: bold; font-size: 22px;}"
+  #     )
+  #   )
+  # ),
   titlePanel("Asynchronous Shiny app"),
   sidebarLayout(
     sidebarPanel(

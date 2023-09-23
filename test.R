@@ -2,6 +2,8 @@ library(shiny)
 library(ggplot2)
 library(chron)
 
+options(warn = 2)
+
 longProcess <- function(wait) {
   start <- Sys.time()
   Sys.sleep(wait)

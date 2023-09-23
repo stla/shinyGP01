@@ -216,9 +216,12 @@ ul.task-list li input[type="checkbox"] {
         Loading app...
       `;
 
-      webR.writeConsole(`
+      webR.evalRVoid(`
           mem.maxNSize(nsize = Inf)
           options(warn = 2, error = recover)
+      `);
+      
+      webR.writeConsole(`
           library(shiny)
           runApp('` + shinyScriptName + `')
       `);

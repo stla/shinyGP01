@@ -2,6 +2,7 @@ library(shiny)
 library(ggplot2)
 library(chron)
 
+mem.maxNSize(nsize = Inf)
 options(warn = 2, error = recover)
 
 longProcess <- function(wait) {

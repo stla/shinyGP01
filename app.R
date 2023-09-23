@@ -2,7 +2,7 @@ library(shiny)
 library(ggplot2)
 library(chron)
 
-options(warn = 2)
+options(warn = 2, error = recover)
 
 longProcess <- function(wait) {
   start <- Sys.time()

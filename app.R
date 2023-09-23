@@ -1,6 +1,6 @@
 library(shiny)
 library(ggplot2)
-library(chron)
+
 
 mem.maxNSize(nsize = Inf)
 options(warn = 2, error = recover)
@@ -10,8 +10,8 @@ longProcess <- function(wait) {
   Sys.sleep(wait)
   end   <- Sys.time()
   data.frame(
-    start    = as.character(times(strftime(start, "%H:%M:%S"))),
-    end      = as.character(times(strftime(end,   "%H:%M:%S"))),
+    start    = as.character(strftime(start, "%H:%M:%S")),
+    end      = as.character(strftime(end,   "%H:%M:%S")),
     duration = paste(round(end - start, 1L), "sec")
   )
 }

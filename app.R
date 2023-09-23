@@ -49,7 +49,7 @@ ui <- fluidPage(
       fluidRow(
         column(
           4, 
-          tableOutput("ProcessInfo")
+          tableOutput("XProcessInfo")
         ),
         column(
           8, 
@@ -89,7 +89,7 @@ server <- function(input, output, session) {
     ProcessInfo(longProcess(10L))
   })
   
-  output[["ProcessInfo"]] <- renderTable({
+  output[["XProcessInfo"]] <- renderTable({
     req(Promise())
     ProcessInfo()
   })

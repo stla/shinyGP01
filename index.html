@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
   window.coi = {
     // // A function that is run to decide whether to register the SW or not.
     // You could for instance make this return a value based on whether you actually need to be cross origin isolated or not.
-    shouldRegister: () => false,
+    shouldRegister: () => true,
     // If this function returns true, any existing service worker will be deregistered (and nothing else will happen).
     shouldDeregister: () => false,
     // A function that is run to decide whether to use "Cross-Origin-Embedder-Policy: credentialless" or not.

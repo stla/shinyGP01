@@ -22,7 +22,7 @@ See [this blog](https://r-posts.com/build-serverless-shiny-application-via-githu
 
   const webR = new WebR();
   // TODO
-  const shinyScriptURL = 'https://raw.githubusercontent.com/stla/ShinyGP01/main/test.R'
+  const shinyScriptURL = 'https://raw.githubusercontent.com/stla/ShinyGP01/main/'
   const shinyScriptName = 'test.R'
 
   let webSocketHandleCounter = 0;

@@ -218,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
 
       webR.evalRVoid(`
           mem.maxNSize(nsize = Inf)
-          options(warn = 2, error = recover)
+          options(warn = 2, error = recover, expressions = 1000)
       `);
       
       webR.writeConsole(`
